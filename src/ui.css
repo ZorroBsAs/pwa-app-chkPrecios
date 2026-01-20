@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+/*.topbar {
+  background: #f57c00;
+  height: 50px;
+}
+
+
+  justify-content: flex-end;
+  padding-right: 20px*/ 
+
+.topbar {
+  background: #f57c00;
+  height: 50px;
+  display: flex; /* Usamos Flexbox */
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 0 10px; /* Agrega algo de espacio a los lados */
+}
+
+.sync-date {
+  margin: 0; /* Elimina cualquier margen que pueda haber por defecto */
+  color: white; /* Cambia el color de texto a blanco (o el color que prefieras) */
+  font-size: 14px; /* Tamaño de fuente para la fecha */
+}
+.sync-btn {
+background: #f57c00;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.app {
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.label {
+  width: 110px;
+  font-size: 13px;
+  color: #444;
+
+}
+.label-bold {
+  width: 110px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+  
+.input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid #f57c00;
+}
+
+.camera-btn {
+  background: #f57c00;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.select {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.value {
+  flex: 1;
+  font-size: 16px;
+  padding: 8px 0;
+}
+.value-bold {
+  flex: 1;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.value-format-num {
+  flex: 1;
+  font-size: 16px;
+  padding: 8px 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.search-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  font-size: 18px;
+  background: #f57c00;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.sku-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.barcode-text {
+  font-size: 16px; /* mucho más pequeño */
+  color: #555;
+  margin-top: 2px; /* espacio debajo del input */
+  font-family: monospace; /* opcional, para que se vea uniforme */
+  text-align: left;
+}
