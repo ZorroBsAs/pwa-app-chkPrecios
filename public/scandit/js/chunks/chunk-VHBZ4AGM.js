@@ -1,0 +1,3 @@
+var r=class{constructor(a,e){this.scanningBehavior=a,this.previewBehavior=e;}},i=class n extends r{toJSONObject(){return {type:"default",scanningBehavior:this.scanningBehavior,previewBehavior:this.previewBehavior}}copyWith(a,e){return new n(a!=null?a:this.scanningBehavior,e!=null?e:this.previewBehavior)}changeMode(){return new c(this.scanningBehavior,this.previewBehavior)}},c=class n extends r{toJSONObject(){return {type:"target",scanningBehavior:this.scanningBehavior,previewBehavior:this.previewBehavior}}copyWith(a,e){return new n(a!=null?a:this.scanningBehavior,e!=null?e:this.previewBehavior)}changeMode(){return new i(this.scanningBehavior,this.previewBehavior)}};
+
+export { r as a, i as b, c };

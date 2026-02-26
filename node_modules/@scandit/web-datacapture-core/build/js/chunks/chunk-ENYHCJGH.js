@@ -1,0 +1,1 @@
+var t=class i{constructor(e,r){this._value=e,this._unit=r;}get value(){return this._value}get unit(){return this._unit}static fromJSON(e){return new i(e.value,e.unit)}toJSONObject(){return {unit:this.unit,value:this.value}}};export{t as a};

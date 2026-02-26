@@ -1,0 +1,57 @@
+import { AugmentedWorker, ModuleHandler } from '@scandit/web-datacapture-core/build/js/worker/dataCaptureWorkerRelated';
+import { WorkerMain as WorkerMain$1 } from '@scandit/web-datacapture-core/build/js/worker/index.js';
+import { D as DataCaptureEngine } from '../BarcodeArMode-BME9pF28.js';
+import { Module, DataCaptureActionMessageKey, AnyDataCaptureActionMessage } from './dataCaptureWorkerRelated.js';
+import '@scandit/web-datacapture-core/build/js/worker/index';
+import '../ar/BarcodeArSettings.js';
+import '@scandit/web-datacapture-core';
+import '@scandit/web-datacapture-core/build/js/private/Serializable';
+import '../Barcode.js';
+import '../EncodingRange.js';
+import '../StructuredAppendData.js';
+import '../SymbologySettings.js';
+import '../find/BarcodeFindBasicOverlay.js';
+import '../find/BarcodeFind.js';
+import '../find/BarcodeFindFeedback.js';
+import '../find/BarcodeFindItem.js';
+import '../find/BarcodeFindSession.js';
+import '../TrackedBarcode.js';
+import '../find/BarcodeFindTransformer.js';
+import '../find/BarcodeFindSettings.js';
+import './PropertyBehaviorSubject.js';
+import '../BarcodeBatchSession.js';
+import '../BarcodeCaptureSession.js';
+import '../LocalizedOnlyBarcode.js';
+import '../ar/BarcodeArSession.js';
+import '../spark/SparkScanSession.js';
+import '../SparkScanView-DUcwRAxm.js';
+import '@scandit/web-datacapture-core/build/js/private/utils/index.js';
+import '../spark/SparkScanScanningMode.js';
+import '../spark/SparkScanPreviewBehavior.js';
+import '../spark/SparkScanScanningBehavior.js';
+import '../spark/SparkScan.js';
+import '../spark/SparkScanSettings.js';
+import '../ScanIntention.js';
+import '../spark/SparkScanFeedbackDelegate.js';
+import '../spark/SparkScanBarcodeFeedback.js';
+import '../spark/ui/SparkScanViewSettings.js';
+import '../spark/ui/SparkScanMiniPreviewSize.js';
+import '../spark/ui/SparkScanToastSettings.js';
+import '../spark/ui/constants/tags.js';
+import '../spark/ui/SparkScanViewState.js';
+import '../spark/ui/SparkScanViewIcon.js';
+import '../spark/ui/constants/attributes.js';
+import '../spark/ui/SparkScanViewMiniPreview.js';
+import '../spark/ui/SparkScanViewToast.js';
+import '../spark/ui/SparkScanViewToolbar.js';
+import '../spark/ui/constants/events.js';
+import '../spark/ui/SparkScanViewTriggerButton.js';
+import '../spark/ui/SparkScanViewVisualFeedback.js';
+
+declare class WorkerMain extends WorkerMain$1<DataCaptureEngine, Module> {
+    constructor(workerSelf: AugmentedWorker<Module>, module: ModuleHandler<Module>);
+    respondWith<T = unknown>(command: DataCaptureActionMessageKey, requestId: number, executor: () => T): Promise<void>;
+    onMessage(event: MessageEvent<AnyDataCaptureActionMessage>): boolean;
+}
+
+export { WorkerMain };

@@ -1,0 +1,1 @@
+export{a as ensureGlobalThisPolyfill}from'../../chunks/chunk-ACFJP5SR.js';

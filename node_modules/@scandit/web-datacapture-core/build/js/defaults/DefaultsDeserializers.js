@@ -1,0 +1,1 @@
+import {b,c}from'../chunks/chunk-GX4YCYCH.js';var o=class{static fromJSON(u){return (u==null?void 0:u.type)==="tapToFocus"?new b:null}},r=class{static fromJSON(u){return (u==null?void 0:u.type)==="swipeToZoom"?new c:null}};export{o as PrivateFocusGestureDeserializer,r as PrivateZoomGestureDeserializer};

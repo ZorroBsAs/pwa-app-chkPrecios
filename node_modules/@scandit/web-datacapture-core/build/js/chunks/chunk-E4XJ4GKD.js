@@ -1,0 +1,1 @@
+var i=class{constructor(e,t){this._origin=e,this._size=t;}get origin(){return this._origin}get size(){return this._size}toJSONObject(){return {origin:this.origin.toJSONObject(),size:this.size.toJSONObject()}}};export{i as a};

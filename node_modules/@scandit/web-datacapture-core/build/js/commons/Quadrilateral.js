@@ -1,0 +1,1 @@
+export{a as Quadrilateral}from'../chunks/chunk-IJQG3OU6.js';

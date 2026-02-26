@@ -1,0 +1,1 @@
+export{a as StructuredAppendData}from'./chunks/chunk-IEE5MKEA.js';

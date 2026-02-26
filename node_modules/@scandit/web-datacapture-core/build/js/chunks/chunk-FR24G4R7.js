@@ -1,0 +1,1 @@
+var t=class{constructor(e,i){this._size=e,this._aspect=i;}get size(){return this._size}get aspect(){return this._aspect}};export{t as a};

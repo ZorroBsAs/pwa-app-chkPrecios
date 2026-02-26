@@ -1,0 +1,1 @@
+function n(e){return typeof globalThis<"u"&&globalThis.requestAnimationFrame?globalThis.requestAnimationFrame(e):setTimeout(()=>{e(performance.now());},0)}function a(e){typeof globalThis<"u"&&globalThis.cancelAnimationFrame?globalThis.cancelAnimationFrame(e):clearTimeout(e);}export{n as a,a as b};

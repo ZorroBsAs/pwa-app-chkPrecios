@@ -1,0 +1,7 @@
+import { a } from './chunk-BRRT6GC7.js';
+import { b as b$1 } from './chunk-VHBZ4AGM.js';
+import { b } from './chunk-TRWFJYCT.js';
+
+var n=class{constructor(){this.defaultHandMode=b.SparkScan.SparkScanViewSettings.defaultHandMode;this.defaultScanningMode=new b$1("single","default");this.defaultTorchState=b.SparkScan.SparkScanViewSettings.defaultTorchState;this.hapticEnabled=b.SparkScan.SparkScanViewSettings.hapticEnabled;this.holdToScanEnabled=b.SparkScan.SparkScanViewSettings.holdToScanEnabled;this.inactiveStateTimeout=b.SparkScan.SparkScanViewSettings.inactiveStateTimeout;this.soundEnabled=b.SparkScan.SparkScanViewSettings.soundEnabled;this.toastSettings=new a;this.triggerButtonCollapseTimeout=b.SparkScan.SparkScanViewSettings.triggerButtonCollapseTimeout;this.visualFeedbackEnabled=b.SparkScan.SparkScanViewSettings.visualFeedbackEnabled;this.zoomFactorIn=b.SparkScan.SparkScanViewSettings.zoomFactorIn;this.zoomFactorOut=b.SparkScan.SparkScanViewSettings.zoomFactorOut;}toJSONObject(){return {defaultHandMode:this.defaultHandMode,defaultScanningMode:this.defaultScanningMode.toJSONObject(),defaultTorchState:this.defaultTorchState,hapticEnabled:this.hapticEnabled,holdToScanEnabled:this.holdToScanEnabled,inactiveStateTimeout:this.inactiveStateTimeout,soundEnabled:this.soundEnabled,toastSettings:this.toastSettings.toJSONObject(),triggerButtonCollapseTimeout:this.triggerButtonCollapseTimeout,visualFeedbackEnabled:this.visualFeedbackEnabled,zoomFactorIn:this.zoomFactorIn,zoomFactorOut:this.zoomFactorOut}}};
+
+export { n as a };

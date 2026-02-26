@@ -1,0 +1,1 @@
+var e={preferredResolution:"hd",zoomFactor:1,focusGestureStrategy:"manualUntilCapture",zoomGestureZoomFactor:2};export{e as a};

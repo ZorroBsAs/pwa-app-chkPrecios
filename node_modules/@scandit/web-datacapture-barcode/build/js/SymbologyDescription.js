@@ -1,0 +1,1 @@
+export{a as SymbologyDescription}from'./chunks/chunk-4WOPZNZG.js';

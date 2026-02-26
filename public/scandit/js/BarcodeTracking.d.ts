@@ -1,0 +1,10 @@
+import 'scandit-web-datacapture-core';
+import 'scandit-web-datacapture-core/build/js/private/Serializable';
+import './BarcodeTrackingSession.js';
+import './BarcodeTrackingSettings.js';
+export { a as BarcodeTracking, B as BarcodeTrackingListener, P as PrivateBarcodeTracking } from './BarcodeTracking-C_jbHwi-.js';
+import './TrackedBarcode.js';
+import './Barcode.js';
+import './EncodingRange.js';
+import './StructuredAppendData.js';
+import './SymbologySettings.js';

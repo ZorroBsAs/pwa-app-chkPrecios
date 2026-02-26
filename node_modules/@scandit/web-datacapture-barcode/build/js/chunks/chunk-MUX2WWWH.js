@@ -1,0 +1,1 @@
+import {Quadrilateral}from'@scandit/web-datacapture-core';var r=class t{get frameID(){return this._frameID}get location(){return this._location}static fromJSON(e){let a=new t;return a._location=Quadrilateral.fromJSON(e.location),a._frameID=e.frameId,a}toJSONObject(){return {frameId:this.frameID,location:this.location.toJSONObject()}}};export{r as a};

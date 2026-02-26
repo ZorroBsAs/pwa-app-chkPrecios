@@ -1,0 +1,55 @@
+import { TorchState } from '@scandit/web-datacapture-core';
+import { SparkScanPreviewBehavior } from '../SparkScanPreviewBehavior.js';
+import { SparkScanScanningBehavior } from '../SparkScanScanningBehavior.js';
+import { SparkScanScanningMode } from '../SparkScanScanningMode.js';
+import { SparkScanViewPreferenceManager } from './SparkScanViewPreferenceManager.js';
+import { SparkScanViewSettings } from './SparkScanViewSettings.js';
+import { SparkScanViewState } from './SparkScanViewState.js';
+import { SparkScanMiniPreviewSize } from './SparkScanMiniPreviewSize.js';
+import '@scandit/web-datacapture-core/build/js/private/Serializable';
+import './SparkScanToastSettings.js';
+
+declare class SparkScanViewStateManager {
+    state: SparkScanViewState;
+    scanningMode: SparkScanScanningMode;
+    zoomFactor: number;
+    holdingToScan: boolean;
+    torchState: TorchState;
+    triggerButtonPressed: boolean;
+    inSmartScanSelection: boolean;
+    miniPreviewSizeBeforeSmartScanSelection?: SparkScanMiniPreviewSize;
+    previewSizeControlVisibleBeforeSmartScanSelection?: boolean;
+    private viewSettings;
+    private preferenceManager;
+    constructor(viewSettings: SparkScanViewSettings, preferenceManager: SparkScanViewPreferenceManager);
+    get targetModeEnabled(): boolean;
+    get scanningBehavior(): SparkScanScanningBehavior;
+    set scanningBehavior(scanningBehavior: SparkScanScanningBehavior);
+    get previewBehavior(): SparkScanPreviewBehavior;
+    set previewBehavior(previewBehavior: SparkScanPreviewBehavior);
+    get zoomedIn(): boolean;
+    get zoomedOut(): boolean;
+    get idleState(): boolean;
+    get torchEnabled(): boolean;
+    get continuousModeEnabled(): boolean;
+    get isSingleScanning(): boolean;
+    get shouldEnableSuppression(): boolean;
+    get portraitOrientationTriggerButtonTranslateX(): number | undefined;
+    set portraitOrientationTriggerButtonTranslateX(translateX: number);
+    get portraitOrientationTriggerButtonTranslateY(): number | undefined;
+    set portraitOrientationTriggerButtonTranslateY(translateY: number);
+    get landscapeOrientationTriggerButtonTranslateX(): number | undefined;
+    set landscapeOrientationTriggerButtonTranslateX(translateX: number);
+    get landscapeOrientationTriggerButtonTranslateY(): number | undefined;
+    set landscapeOrientationTriggerButtonTranslateY(translateY: number);
+    get portraitOrientationMiniPreviewTranslateX(): number | undefined;
+    set portraitOrientationMiniPreviewTranslateX(translateX: number);
+    get portraitOrientationMiniPreviewTranslateY(): number | undefined;
+    set portraitOrientationMiniPreviewTranslateY(translateY: number);
+    get landscapeOrientationMiniPreviewTranslateX(): number | undefined;
+    set landscapeOrientationMiniPreviewTranslateX(translateX: number);
+    get landscapeOrientationMiniPreviewTranslateY(): number | undefined;
+    set landscapeOrientationMiniPreviewTranslateY(translateY: number);
+}
+
+export { SparkScanViewStateManager };

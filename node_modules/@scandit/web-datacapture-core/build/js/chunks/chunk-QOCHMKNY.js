@@ -1,0 +1,1 @@
+var i=class t{constructor(e,r){this._width=e,this._height=r;}get width(){return this._width}get height(){return this._height}static fromJSON(e){return new t(e.width,e.height)}toJSONObject(){return {height:this.height,width:this.width}}};export{i as a};

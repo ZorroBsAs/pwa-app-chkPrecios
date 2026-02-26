@@ -1,0 +1,1 @@
+export{f as availableHardwareConcurrency,e as checkFullMultithreadingSupport,c as hasSIMDSupport,b as hasSharedArrayBufferSupport,d as hasThreadsSupport,a as isCrossOriginIsolated}from'../chunks/chunk-SBC5K7IT.js';

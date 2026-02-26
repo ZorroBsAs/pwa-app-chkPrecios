@@ -1,0 +1,1 @@
+export{a as BarcodeCaptureSettings}from'./chunks/chunk-NCP2TCSC.js';

@@ -1,0 +1,1 @@
+export{a as getTimestamp}from'../../chunks/chunk-3A7LM5JG.js';

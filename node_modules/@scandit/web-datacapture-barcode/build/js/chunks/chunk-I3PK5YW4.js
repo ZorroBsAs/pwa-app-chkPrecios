@@ -1,0 +1,1 @@
+import {a as a$1}from'./chunk-TCXM24SN.js';var a=class{constructor(){this.soundEnabled=true;this.hapticEnabled=true;this.defaultCameraPosition=a$1;}};export{a};

@@ -1,0 +1,1 @@
+export{a as LocalizedOnlyBarcode}from'./chunks/chunk-MUX2WWWH.js';

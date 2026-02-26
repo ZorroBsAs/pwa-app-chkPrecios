@@ -1,0 +1,1 @@
+export{a as fromGrayscaleToRgba}from'../../chunks/chunk-DN32UPQC.js';

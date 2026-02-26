@@ -1,0 +1,1 @@
+var a=(p=>(p.Unknown="unknown",p.Portrait="portrait",p.PortraitUpsideDown="portraitUpsideDown",p.LandscapeRight="landscapeRight",p.LandscapeLeft="landscapeLeft",p))(a||{});export{a};

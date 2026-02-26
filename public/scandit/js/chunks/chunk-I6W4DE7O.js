@@ -1,0 +1,6 @@
+import { a, b } from './chunk-6GFA45IH.js';
+import { Sound } from 'scandit-web-datacapture-core';
+
+var s=new Sound(a),p=new Sound(b);
+
+export { s as a, p as b };

@@ -1,0 +1,1 @@
+var a=class t{get endIndex(){return this._endIndex}get ianaName(){return this._ianaName}get startIndex(){return this._startIndex}static fromJSON(n){let e=new t;return e._ianaName=n.ianaName,e._startIndex=n.startIndex,e._endIndex=n.endIndex,e}toJSONObject(){return {endIndex:this.endIndex,ianaName:this.ianaName,startIndex:this.startIndex}}};export{a};

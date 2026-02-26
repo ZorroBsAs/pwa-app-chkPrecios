@@ -1,0 +1,1 @@
+export{b as cancelSafeRequestAnimationFrame,a as safeRequestAnimationFrame}from'../../chunks/chunk-CX2R2XQK.js';

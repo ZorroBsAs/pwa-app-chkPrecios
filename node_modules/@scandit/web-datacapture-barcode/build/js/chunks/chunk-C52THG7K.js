@@ -1,0 +1,1 @@
+var e=class{constructor(a){this.advancedOverlay=a;}didUpdateSession(a,c){this.advancedOverlay.update(c);}};export{e as a};

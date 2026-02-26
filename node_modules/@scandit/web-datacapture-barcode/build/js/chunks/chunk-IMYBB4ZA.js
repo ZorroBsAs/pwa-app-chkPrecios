@@ -1,0 +1,1 @@
+var o=(u=>(u.Single="single",u.Continuous="continuous",u))(o||{});export{o as a};

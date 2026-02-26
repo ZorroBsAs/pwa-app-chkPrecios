@@ -1,0 +1,9 @@
+declare enum ParserDataFormat {
+    GS1_AI = 0,
+    HIBC = 1,
+    SWISS_QR = 4,
+    VIN = 5,
+    IATA_BCBP = 7
+}
+
+export { ParserDataFormat };

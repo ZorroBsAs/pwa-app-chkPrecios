@@ -1,0 +1,1 @@
+export{b as OrientationObserver,a as orientationChangeEvent}from'../chunks/chunk-XYZYNUX3.js';

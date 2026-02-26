@@ -1,0 +1,1 @@
+function g(r,...n){return r.reduce((t,i,o)=>{var e;let u=(e=n[o])!=null?e:"";return t+i+String(u)},"")}function s(r,n,t=""){return r?n:t}export{g as a,s as b};

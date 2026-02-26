@@ -1,0 +1,1 @@
+import {a}from'./chunk-ENYHCJGH.js';var r=class e{constructor(i,n){this._x=i,this._y=n;}static get zero(){return new e(new a(0,"pixel"),new a(0,"pixel"))}get x(){return this._x}get y(){return this._y}static fromJSON(i){return new e(a.fromJSON(i.x),a.fromJSON(i.y))}toJSONObject(){return {x:this.x.toJSONObject(),y:this.y.toJSONObject()}}};export{r as a};

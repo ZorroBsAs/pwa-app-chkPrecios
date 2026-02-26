@@ -1,0 +1,1 @@
+export{a as defaultSparkCapture}from'../chunks/chunk-J3R5M6PN.js';

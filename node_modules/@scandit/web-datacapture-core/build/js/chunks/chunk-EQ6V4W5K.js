@@ -1,0 +1,1 @@
+function e(n){if(!n)return  false;try{return n.cancel(),true}catch{return  false}}async function t(n){if(n)try{await n.finished;}catch{}}export{e as a,t as b};

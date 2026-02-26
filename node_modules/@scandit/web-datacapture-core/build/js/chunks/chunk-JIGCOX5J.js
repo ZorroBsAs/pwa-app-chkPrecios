@@ -1,0 +1,1 @@
+var t=(e=>(e[e.Y=0]="Y",e[e.U=1]="U",e[e.V=2]="V",e[e.R=3]="R",e[e.G=4]="G",e[e.B=5]="B",e[e.A=6]="A",e[e.D=7]="D",e))(t||{}),i=(r=>(r[r.RGBA=0]="RGBA",r[r.BGRA=1]="BGRA",r))(i||{});export{t as a,i as b};

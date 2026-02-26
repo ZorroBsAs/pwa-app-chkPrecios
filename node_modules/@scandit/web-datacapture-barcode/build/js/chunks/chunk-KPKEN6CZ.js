@@ -1,0 +1,1 @@
+var a=(e=>(e[e.INITIAL=0]="INITIAL",e[e.IDLE=1]="IDLE",e[e.INACTIVE=2]="INACTIVE",e[e.ACTIVE=3]="ACTIVE",e[e.ERROR=4]="ERROR",e))(a||{});export{a};

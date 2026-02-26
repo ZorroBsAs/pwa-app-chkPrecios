@@ -1,0 +1,1 @@
+import {a}from'./chunk-EMLXDXWN.js';var s=class extends a{getNewCanvas(e,t){let n=document.createElement("canvas");return n.width=e,n.height=t,n}async canvasToBlob(e){return new Promise(t=>{e.toBlob(t,a.JPEG_IMAGE_MIME_TYPE,this.options.quality);})}};export{s as a};

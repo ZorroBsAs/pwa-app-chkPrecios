@@ -1,0 +1,23 @@
+import { SvgIcon } from 'scandit-web-datacapture-core/build/js/private/ui/atoms/SvgIcon.js';
+import { defineCustomElements, html } from 'scandit-web-datacapture-core/build/js/private/utils/index.js';
+
+var e=class e extends SvgIcon{static create(){return defineCustomElements({[e.tag]:e}),document.createElement(e.tag)}static register(){defineCustomElements({[e.tag]:e});}render(){return html`
+      <style>
+        ${e.tag} {
+          display: flex;
+        }
+      </style>
+      <svg width="${this.size}" height="${this.heightForViewbox(32,32)}" viewBox="0 0 32 32" fill="none">
+        <circle cx="14" cy="14" r="9" stroke="black" stroke-width="2" />
+        <line x1="20.4142" y1="21" x2="27" y2="27.5858" stroke="black" stroke-width="2" stroke-linecap="round" />
+        <path
+          d="M10 13.5L12.6667 16L18 11"
+          stroke="#28D380"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    `}};e.tag="scandit-item-found-icon";var t=e;t.register();
+
+export { t as a };

@@ -1,0 +1,11 @@
+import '@scandit/web-datacapture-core';
+import '@scandit/web-datacapture-core/build/js/private/Serializable';
+import './BarcodeArSettings.js';
+import './BarcodeArFeedback.js';
+export { B as BarcodeAr } from '../BarcodeAr-02zxFUGP.js';
+import '../Barcode.js';
+import '../EncodingRange.js';
+import '../StructuredAppendData.js';
+import '../SymbologySettings.js';
+import './BarcodeArSession.js';
+import '../TrackedBarcode.js';

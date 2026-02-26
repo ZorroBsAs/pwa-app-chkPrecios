@@ -1,0 +1,1 @@
+export{a as BarcodeArInfoAnnotationFooter}from'../../../chunks/chunk-FD4QVJDW.js';

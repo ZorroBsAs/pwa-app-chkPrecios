@@ -1,0 +1,1 @@
+import {Direction}from'@scandit/web-datacapture-core';var t=o=>o==null?false:o===Direction.Horizontal,i=o=>!t(o),c=o=>o==="top-center"||o==="bottom-center",a=o=>o==="left-center"||o==="right-center";export{a as isAnchorXcenter,c as isAnchorYcenter,t as isDirectionHorizontal,i as isDirectionVertical};

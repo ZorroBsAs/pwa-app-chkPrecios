@@ -1,0 +1,1 @@
+function a(t,n){let M=Math.abs(t.clientX-n.clientX),e=Math.abs(t.clientY-n.clientY);return M>=10||e>=10}export{a};

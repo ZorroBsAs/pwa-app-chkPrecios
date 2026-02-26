@@ -1,0 +1,1 @@
+function r(t,o,a,e=0){t.style.position="absolute",t.style.willChange="transform",t.style.transform=`translate3d(calc(${Math.round(o.x)}px + ${a.x}%), calc(${Math.round(o.y)}px + ${a.y}%), 0px) rotate(${e}deg)`;}export{r as a};

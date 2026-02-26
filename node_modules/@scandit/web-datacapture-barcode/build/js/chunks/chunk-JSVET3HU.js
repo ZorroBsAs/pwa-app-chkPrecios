@@ -1,0 +1,1 @@
+var a=(m=>(m.Manual="manual",m.Smart="smart",m.SmartSelection="smartSelection",m))(a||{});export{a};

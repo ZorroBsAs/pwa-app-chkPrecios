@@ -1,0 +1,1 @@
+import {CameraSettings,CameraPosition}from'@scandit/web-datacapture-core';var t={zoomFactor:1,zoomGestureZoomFactor:2,focusGestureStrategy:"manualUntilCapture",preferredResolution:"fullHd"},m=CameraPosition.WorldFacing,n=CameraSettings.fromJSON(t);export{m as a,n as b};

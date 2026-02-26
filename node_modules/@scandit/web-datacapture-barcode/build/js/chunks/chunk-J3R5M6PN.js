@@ -1,0 +1,1 @@
+var e={SparkCaptureSettings:{codeDuplicateFilter:1e3}};export{e as a};

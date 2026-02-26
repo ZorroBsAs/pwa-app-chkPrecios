@@ -1,0 +1,1 @@
+var G=(A=>(A.RGBA="RGBA",A.GRAYSCALE="GRAYSCALE",A))(G||{});export{G as a};

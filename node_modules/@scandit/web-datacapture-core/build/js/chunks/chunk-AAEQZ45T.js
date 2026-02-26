@@ -1,0 +1,1 @@
+function o(){if(typeof globalThis<"u"&&"cookieStore"in globalThis&&globalThis.cookieStore!=null)return globalThis.cookieStore;throw new Error("CookieStore API is not available. loadPolyfills() call failed?")}export{o as a};

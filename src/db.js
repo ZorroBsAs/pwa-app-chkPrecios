@@ -100,9 +100,10 @@ export const obtenerProductoPorCodBarras = async (cod_barras) => {
   const index = store.index("cod_barras");
   // Convertir a número si tus códigos son números (para coincidir con keyPath)
   //const codBarrasNorm = Number(cod_barras);
-  const codBarrasNorm = cod_barras;
+  const codBarrasNorm = String(cod_barras).trim(); // Si tus códigos de barras son strings, envuélvelos en comillas para asegurar la coincidencia exacta
   return await index.get(codBarrasNorm); // Devuelve un solo producto o undefined si no existe
 };
+
 
 export const obtenerProductoPorCodigo = async (codigo) => {
   const database = await db;

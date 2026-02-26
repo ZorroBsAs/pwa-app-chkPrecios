@@ -1,0 +1,1 @@
+var e={defaultVibrationPattern:[300]};export{e as a};

@@ -1,0 +1,1 @@
+var t=(o=>(o.None="none",o.Horizontal="horizontal",o.LeftToRight="leftToRight",o.RightToLeft="rightToLeft",o.Vertical="vertical",o.TopToBottom="topToBottom",o.BottomToTop="bottomToTop",o))(t||{});export{t as a};

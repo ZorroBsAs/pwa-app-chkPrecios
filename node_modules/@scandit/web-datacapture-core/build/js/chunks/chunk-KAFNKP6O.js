@@ -1,0 +1,1 @@
+var n=class r{constructor(e,t){this._x=e,this._y=t;}get x(){return this._x}get y(){return this._y}static mirrorX(e,t){let i=e.x-t.width;return i*=-1,new r(i,e.y)}static fromJSON(e){return new r(e.x,e.y)}toJSONObject(){return {x:this.x,y:this.y}}static areEquals(e,t){return e.x===t.x&&e.y===t.y}equals(e){return this.x===e.x&&this.y===e.y}};export{n as a};

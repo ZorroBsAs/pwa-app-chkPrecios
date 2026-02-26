@@ -1,0 +1,3 @@
+var h=Object.defineProperty;var i=Object.getOwnPropertyDescriptor;var k=(g,b,d,c)=>{for(var a=c>1?void 0:c?i(b,d):b,e=g.length-1,f;e>=0;e--)(f=g[e])&&(a=(c?f(b,d,a):f(a))||a);return c&&a&&h(b,d,a),a};var n={"scandit-datacapture-sdk-barcode-pthreads.wasm":{bytes:6971587},"scandit-datacapture-sdk-barcode.wasm":{bytes:7294658},"scandit-datacapture-sdk-barcode-simd-pthreads.wasm":{bytes:7136016},"scandit-datacapture-sdk-parser-pthreads.wasm":{bytes:5237179},"scandit-datacapture-sdk-barcode-simd.wasm":{bytes:7492951},"scandit-datacapture-sdk-parser-simd-pthreads.wasm":{bytes:5233910},"scandit-datacapture-sdk-parser-simd.wasm":{bytes:5661082},"scandit-datacapture-sdk-parser.wasm":{bytes:5629124}};
+
+export { k as a, n as b };

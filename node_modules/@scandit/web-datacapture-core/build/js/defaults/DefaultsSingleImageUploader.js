@@ -1,0 +1,1 @@
+export{a as defaultSingleImageUploader}from'../chunks/chunk-BZAQMYII.js';

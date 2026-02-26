@@ -1,0 +1,1 @@
+var l=(i=>(i.Initial="Initial",i.Idle="idle",i.Active="active",i.Inactive="inactive",i.Error="error",i))(l||{});export{l as a};

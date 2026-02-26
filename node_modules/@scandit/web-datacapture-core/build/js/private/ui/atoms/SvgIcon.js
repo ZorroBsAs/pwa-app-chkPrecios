@@ -1,0 +1,1 @@
+export{a as SvgIcon}from'../../../chunks/chunk-O7EM4VIM.js';

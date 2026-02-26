@@ -1,0 +1,155 @@
+import { Color, DataCaptureContext } from 'scandit-web-datacapture-core';
+import { ScanditHTMLElement } from 'scandit-web-datacapture-core/build/js/private/utils/index.js';
+import { SparkScan } from '../SparkScan.js';
+import { SparkScanFeedbackDelegate } from '../SparkScanFeedbackDelegate.js';
+import { SparkScanScanningMode } from '../SparkScanScanningMode.js';
+import { SparkScanViewSettings } from './SparkScanViewSettings.js';
+import { handModeAttribute } from './constants/attributes.js';
+import { sparkScanViewTag } from './constants/tags.js';
+import 'scandit-web-datacapture-core/build/js/private/Serializable';
+import '../SparkScanSession.js';
+import '../../Barcode.js';
+import '../../EncodingRange.js';
+import '../../StructuredAppendData.js';
+import '../SparkScanSettings.js';
+import '../../ScanIntention.js';
+import '../../SymbologySettings.js';
+import '../SparkScanBarcodeFeedback.js';
+import '../SparkScanPreviewBehavior.js';
+import '../SparkScanScanningBehavior.js';
+import './SparkScanToastSettings.js';
+import './SparkScanViewHandMode.js';
+
+declare class SparkScanView extends ScanditHTMLElement {
+    targetModeButtonVisible: boolean;
+    scanningBehaviorButtonVisible: boolean;
+    torchButtonVisible: boolean;
+    /**
+     * @deprecated This property is deprecated as the sound mode button will be removed in the future
+     */
+    soundModeButtonVisible: boolean;
+    /**
+     * @deprecated This property is deprecated as the haptic mode button will be removed in the future
+     */
+    hapticModeButtonVisible: boolean;
+    handModeButtonVisible: boolean;
+    zoomSwitchControlVisible: boolean;
+    previewSizeControlVisible: boolean;
+    startCapturingText?: string;
+    scanningCapturingText?: string;
+    resumeCapturingText?: string;
+    stopCapturingText?: string;
+    captureButtonBackgroundColor?: Color;
+    captureButtonActiveBackgroundColor?: Color;
+    captureButtonTintColor?: Color;
+    toolbarBackgroundColor?: Color;
+    toolbarIconActiveTintColor?: Color;
+    toolbarIconInactiveTintColor?: Color;
+    didChangeScanningMode?: (scanningMode: SparkScanScanningMode) => void;
+    feedbackDelegate: SparkScanFeedbackDelegate;
+    private presenter;
+    private settings;
+    private miniPreview;
+    private triggerButton;
+    private visualFeedback;
+    private miniPreviewTimeout;
+    private triggerButtonRepositioningTimeout;
+    private triggerButtonTranslateY;
+    private triggerButtonTranslateYOffset;
+    private gestureManagers;
+    private orientationManager;
+    private miniPreviewButtonTapListener;
+    private miniPreviewSwipeUpListener;
+    private miniPreviewSwipeDownListener;
+    private triggerButtonTapListener;
+    private triggerButtonHoldStartListener;
+    private triggerButtonHoldEndListener;
+    private triggerButtonVerticalSwipeStartListener;
+    private triggerButtonVerticalSwipeListener;
+    private triggerButtonVerticalSwipeEndListener;
+    private triggerButtonSwipeLeftListener;
+    private triggerButtonSwipeRightListener;
+    private sidebarButtonTapListener;
+    private clickOutsideListener;
+    private visibilityChangeListener;
+    private orientationChangeListener;
+    private swipingVertically;
+    private holdingToScan;
+    private get [handModeAttribute]();
+    private set [handModeAttribute](value);
+    private get _startCapturingText();
+    private get _resumeCapturingText();
+    private get _scanningCapturingText();
+    private get _stopCapturingText();
+    private get _targetModeEnabledMessage();
+    private get _targetModeDisabledMessage();
+    private get _continuousModeEnabledMessage();
+    private get _continuousModeDisabledMessage();
+    private get _scanPausedMessage();
+    private get _torchEnabledMessage();
+    private get _torchDisabledMessage();
+    private get _zoomedInMessage();
+    private get _zoomedOutMessage();
+    static forElement(element: Element, context: DataCaptureContext, sparkScan: SparkScan, sparkScanViewSettings?: SparkScanViewSettings): SparkScanView;
+    private static create;
+    private static createStyleElement;
+    prepareScanning(): Promise<void>;
+    startScanning(): Promise<void>;
+    pauseScanning(): Promise<void>;
+    stopScanning(): Promise<void>;
+    showToast(message: string): void;
+    private mount;
+    private unmount;
+    private connectedCallback;
+    private disconnectedCallback;
+    private setTorchAvailable;
+    private switchToIdleState;
+    private switchToActiveState;
+    private switchToInactiveState;
+    private switchToErrorState;
+    private setTriggerButtonTranslateY;
+    private bounceTriggerButtonTranslateY;
+    private setTranslateYForOrientation;
+    private onMiniPreviewButtonTap;
+    private onMiniPreviewSwipeUp;
+    private onMiniPreviewSwipeDown;
+    private onTriggerButtonTap;
+    private onTriggerButtonHoldStart;
+    private onTriggerButtonHoldEnd;
+    private onTriggerButtonVerticalSwipeStart;
+    private onTriggerButtonVerticalSwipe;
+    private onTriggerButtonVerticalSwipeEnd;
+    private onTriggerButtonSwipeLeft;
+    private onTriggerButtonSwipeRight;
+    private onSidebarButtonTap;
+    private onClickOutside;
+    private onVisibilityChange;
+    private onTargetModeButtonTap;
+    private onScanningBehaviorButtonTap;
+    private onTorchButtonTap;
+    private onSoundModeButtonTap;
+    private onHapticModeButtonTap;
+    private onHandModeButtonTap;
+    private onMiniPreviewTimeoutFinished;
+    private onTriggerButtonRepositioningTimeoutFinished;
+    private onOrientationChange;
+    private targetModeButtonTapped;
+    private scanningBehaviorButtonTapped;
+    private torchButtonTapped;
+    private soundModeButtonTapped;
+    private hapticModeButtonTapped;
+    private handModeButtonTapped;
+    private miniPreviewSwipedUp;
+    private miniPreviewSwipedDown;
+    private isTriggerButtonOverlappingMiniPreview;
+    private isTriggerButtonAboveScreenStart;
+    private isTriggerButtonBelowScreenEnd;
+    private positionTriggerButtonBasedOnAvailableSpace;
+}
+declare global {
+    interface HTMLElementTagNameMap {
+        [sparkScanViewTag]: SparkScanView;
+    }
+}
+
+export { SparkScanView };

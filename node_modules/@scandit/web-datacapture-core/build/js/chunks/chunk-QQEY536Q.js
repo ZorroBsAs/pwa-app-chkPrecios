@@ -1,0 +1,1 @@
+var x=(o=>(o.Pixel="pixel",o.Fraction="fraction",o))(x||{});export{x as a};

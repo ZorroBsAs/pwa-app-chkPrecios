@@ -1,0 +1,1 @@
+var r=class extends CustomEvent{constructor(e){super("camera-fov-changed",{detail:e,bubbles:true,composed:true});}},a=class extends CustomEvent{constructor(e){super("camera-switched",{detail:e,bubbles:true,composed:true});}},o=class extends CustomEvent{constructor(e){super("torch-toggled",{detail:e,bubbles:true,composed:true});}};export{r as a,a as b,o as c};

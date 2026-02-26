@@ -1,0 +1,1 @@
+export{a as defaultBarcodeCapture}from'../chunks/chunk-3YNK2VJA.js';

@@ -1,0 +1,1 @@
+import {gray900}from'@scandit/web-datacapture-core/build/js/private/ui/colors.js';var t=gray900.withAlpha(.15),h=gray900.withAlpha(.3);export{t as a,h as b};

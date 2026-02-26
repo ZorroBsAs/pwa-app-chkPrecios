@@ -1,0 +1,1 @@
+export{a as defaultCamera}from'../chunks/chunk-6LHGFWQI.js';

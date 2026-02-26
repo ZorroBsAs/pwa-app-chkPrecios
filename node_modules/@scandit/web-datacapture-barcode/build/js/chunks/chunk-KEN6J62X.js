@@ -1,0 +1,1 @@
+import {e}from'./chunk-2BGFR4WR.js';var n=class o{static fromJSON(e$1){let r=new o;return e$1.newlyRecognizedBarcode&&(r.newlyRecognizedBarcode=e.fromJSON(e$1.newlyRecognizedBarcode)),r.frameSequenceID=e$1.frameSequenceId,r}};export{n as a};

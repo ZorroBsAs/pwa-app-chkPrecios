@@ -1,0 +1,1 @@
+import {a}from'./chunk-QG3MRQMP.js';var r=class{constructor(){this.frameColor=a.AimerViewfinder.frameColor;this.dotColor=a.AimerViewfinder.dotColor;this.type="aimer";}toJSONObject(){return {type:this.type,frameColor:this.frameColor.toJSON(),dotColor:this.dotColor.toJSON()}}};export{r as a};

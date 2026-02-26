@@ -1,0 +1,61 @@
+import { DataCaptureLoader, DataCaptureLoaderOptions } from 'scandit-web-datacapture-core';
+import { DataCaptureWorker, DataCaptureActionMessageKey, AnyDataCaptureActionMessage } from './dataCaptureWorkerRelated.js';
+import 'scandit-web-datacapture-core/build/js/worker/index';
+import '../BarcodeCaptureSession.js';
+import 'scandit-web-datacapture-core/build/js/private/Serializable';
+import '../Barcode.js';
+import '../EncodingRange.js';
+import '../StructuredAppendData.js';
+import '../LocalizedOnlyBarcode.js';
+import '../BarcodeTrackingSession.js';
+import '../TrackedBarcode.js';
+import '../find/BarcodeFindBasicOverlay.js';
+import '../find/BarcodeFind.js';
+import '../find/BarcodeFindFeedback.js';
+import '../find/BarcodeFindItem.js';
+import '../find/BarcodeFindSession.js';
+import '../find/BarcodeFindTransformer.js';
+import '../find/BarcodeFindSettings.js';
+import '../SymbologySettings.js';
+import '../spark/SparkScanSession.js';
+import '../spark/ui/SparkScanView.js';
+import 'scandit-web-datacapture-core/build/js/private/utils/index.js';
+import '../spark/SparkScan.js';
+import '../spark/SparkScanSettings.js';
+import '../ScanIntention.js';
+import '../spark/SparkScanFeedbackDelegate.js';
+import '../spark/SparkScanBarcodeFeedback.js';
+import '../spark/SparkScanScanningMode.js';
+import '../spark/SparkScanPreviewBehavior.js';
+import '../spark/SparkScanScanningBehavior.js';
+import '../spark/ui/SparkScanViewSettings.js';
+import '../spark/ui/SparkScanToastSettings.js';
+import '../spark/ui/SparkScanViewHandMode.js';
+import '../spark/ui/constants/attributes.js';
+import '../spark/ui/constants/tags.js';
+import '../spark/ui/SparkScanViewCollapsedTriggerButton.js';
+import '../spark/ui/constants/events.js';
+import '../spark/ui/SparkScanViewExpandedTriggerButton.js';
+import '../spark/ui/SparkScanViewGestureManager.js';
+import '../spark/ui/SparkScanViewIcon.js';
+import '../spark/ui/SparkScanViewMiniPreview.js';
+import '../spark/ui/SparkScanViewToast.js';
+import '../spark/ui/SparkScanViewOrientationManager.js';
+import '../spark/ui/SparkScanViewSidebar.js';
+import '../spark/ui/SparkScanViewTriggerButton.js';
+import '../spark/ui/SparkScanViewVisualFeedback.js';
+
+type CommandAndPayload<A, C> = A extends {
+    command: C;
+} ? A : never;
+type WorkerCommandPayload<C> = Omit<CommandAndPayload<AnyDataCaptureActionMessage, C>, "command" | "id">;
+declare class BarcodeCaptureWorkerManager extends DataCaptureLoader {
+    protected _dataCaptureWorker?: DataCaptureWorker;
+    private readonly _name;
+    get dataCaptureWorker(): DataCaptureWorker;
+    get name(): string;
+    static create(options: DataCaptureLoaderOptions): Promise<BarcodeCaptureWorkerManager>;
+    workerCommand<C extends DataCaptureActionMessageKey>(command: C, payload: WorkerCommandPayload<C>, transferables?: Transferable[]): Promise<any>;
+}
+
+export { BarcodeCaptureWorkerManager };

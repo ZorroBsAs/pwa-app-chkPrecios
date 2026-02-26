@@ -1,0 +1,1 @@
+export{a as TorchOffSvgIcon}from'../../../chunks/chunk-YE2GYNRP.js';

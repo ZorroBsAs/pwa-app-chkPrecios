@@ -1,0 +1,1 @@
+var i=500,t=16,n=32,o=400,r=90,d=220,g=236;export{i as a,t as b,n as c,o as d,r as e,d as f,g};

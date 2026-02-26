@@ -1,0 +1,1 @@
+import {a}from'./chunk-EMLXDXWN.js';var t=class extends a{getNewCanvas(e,s){return new OffscreenCanvas(e,s)}canvasToBlob(e){return e.convertToBlob({type:a.JPEG_IMAGE_MIME_TYPE,quality:this.options.quality})}};export{t as a};

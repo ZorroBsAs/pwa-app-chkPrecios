@@ -1,0 +1,1 @@
+export{a as CameraSwitchSvgIcon}from'../../../chunks/chunk-7HYFN4JO.js';

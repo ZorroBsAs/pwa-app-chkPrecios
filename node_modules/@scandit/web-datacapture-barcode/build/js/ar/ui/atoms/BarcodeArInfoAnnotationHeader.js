@@ -1,0 +1,1 @@
+export{a as BarcodeArInfoAnnotationHeader}from'../../../chunks/chunk-MHRGFVAW.js';

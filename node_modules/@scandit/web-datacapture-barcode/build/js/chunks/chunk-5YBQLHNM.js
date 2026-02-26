@@ -1,0 +1,1 @@
+var w=(p=>(p[p.Unknown=0]="Unknown",p[p.CloseUp=1]="CloseUp",p[p.FarAway=2]="FarAway",p))(w||{});export{w as a};

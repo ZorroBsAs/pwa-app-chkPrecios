@@ -1,0 +1,1 @@
+export{b as ScanditIcon,a as ScanditIconShape}from'./chunks/chunk-O4HDBWKK.js';

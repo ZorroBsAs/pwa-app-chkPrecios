@@ -1,0 +1,1 @@
+export { a as AbstractProxyableClass } from '../../chunks/chunk-K74I4SRW.js';

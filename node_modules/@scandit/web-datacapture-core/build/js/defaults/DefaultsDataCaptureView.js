@@ -1,0 +1,1 @@
+export{a as defaultDataCaptureView}from'../chunks/chunk-UQVVJP5Z.js';

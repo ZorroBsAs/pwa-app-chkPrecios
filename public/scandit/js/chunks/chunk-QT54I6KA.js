@@ -1,0 +1,3 @@
+var e=(m=>(m.Frame="frame",m))(e||{});
+
+export { e as a };

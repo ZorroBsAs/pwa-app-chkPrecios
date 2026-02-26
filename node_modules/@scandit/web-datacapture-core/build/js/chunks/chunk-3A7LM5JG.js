@@ -1,0 +1,1 @@
+function e(){return performance.now()}export{e as a};

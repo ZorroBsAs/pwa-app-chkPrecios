@@ -1,0 +1,1 @@
+export{a as Size}from'../chunks/chunk-QOCHMKNY.js';

@@ -1,0 +1,1 @@
+export{a as BarcodeArInfoAnnotationBodyComponent}from'../../../chunks/chunk-KELYPKGG.js';

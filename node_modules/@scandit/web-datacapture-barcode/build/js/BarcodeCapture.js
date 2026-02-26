@@ -1,0 +1,1 @@
+export{a as BarcodeCapture}from'./chunks/chunk-UMB3USWQ.js';

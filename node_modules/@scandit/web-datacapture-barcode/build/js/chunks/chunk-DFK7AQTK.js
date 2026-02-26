@@ -1,0 +1,1 @@
+var s=(t=>(t.Default="default",t.Persistent="persistent",t))(s||{});export{s as a};

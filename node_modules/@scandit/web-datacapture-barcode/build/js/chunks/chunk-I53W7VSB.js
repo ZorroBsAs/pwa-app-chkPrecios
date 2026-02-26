@@ -1,0 +1,1 @@
+import {DataCaptureView}from'@scandit/web-datacapture-core';function r(a){return a instanceof DataCaptureView}export{r as a};

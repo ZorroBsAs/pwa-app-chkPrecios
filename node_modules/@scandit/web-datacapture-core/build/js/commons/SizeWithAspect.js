@@ -1,0 +1,1 @@
+export{a as SizeWithAspect}from'../chunks/chunk-FR24G4R7.js';

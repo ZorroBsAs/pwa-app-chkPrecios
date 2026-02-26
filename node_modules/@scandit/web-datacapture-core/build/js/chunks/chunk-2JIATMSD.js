@@ -1,0 +1,1 @@
+var A=(t=>(t.WidthAndHeight="widthAndHeight",t.WidthAndAspectRatio="widthAndAspectRatio",t.HeightAndAspectRatio="heightAndAspectRatio",t.ShorterDimensionAndAspectRatio="shorterDimensionAndAspectRatio",t))(A||{});export{A as a};

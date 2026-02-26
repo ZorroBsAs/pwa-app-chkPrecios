@@ -1,0 +1,1 @@
+import {a}from'./chunk-HDODW33D.js';import {NumberWithUnit}from'@scandit/web-datacapture-core';var i=class{constructor(){this.radius=new NumberWithUnit(a.SparkScanSettings.locationSelection.radius,a.SparkScanSettings.locationSelection.unit);this.type="targetAimer";}toJSONObject(){return {type:this.type,radius:this.radius.toJSONObject()}}};export{i as a};

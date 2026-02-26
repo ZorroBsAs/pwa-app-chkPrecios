@@ -1,0 +1,3 @@
+var a=class{constructor(){this.dataFormat=7;}toJSONObject(){return {dataFormat:this.dataFormat}}};
+
+export { a };

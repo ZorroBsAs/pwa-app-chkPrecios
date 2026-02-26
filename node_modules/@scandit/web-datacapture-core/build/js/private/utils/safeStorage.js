@@ -1,0 +1,1 @@
+export{a as SafeStorage}from'../../chunks/chunk-KXAJHLEO.js';

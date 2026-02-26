@@ -1,0 +1,1 @@
+export{a as FrameReader}from'../../chunks/chunk-SYGWA3T6.js';

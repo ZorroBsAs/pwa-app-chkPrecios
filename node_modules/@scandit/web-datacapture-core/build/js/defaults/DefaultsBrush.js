@@ -1,0 +1,1 @@
+import {a}from'../chunks/chunk-YOTQPBO6.js';import {a as a$1}from'../chunks/chunk-SGL5J2CI.js';var f=new a(a$1.fromJSON("#00000000"),a$1.fromJSON("#00000000"),0);export{f as defaultBrush};

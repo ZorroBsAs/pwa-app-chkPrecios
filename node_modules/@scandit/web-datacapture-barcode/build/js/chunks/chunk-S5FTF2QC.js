@@ -1,0 +1,1 @@
+var X=(_=>(_.ArucoDictionaryPreset_5X5_50="5X5_50",_.ArucoDictionaryPreset_5X5_100="5X5_100",_.ArucoDictionaryPreset_5X5_250="5X5_250",_.ArucoDictionaryPreset_5X5_1000="5X5_1000",_.ArucoDictionaryPreset_5X5_1023="5X5_1023",_.ArucoDictionaryPreset_4X4_250="4X4_250",_.ArucoDictionaryPreset_6X6_250="6X6_250",_))(X||{});export{X as a};

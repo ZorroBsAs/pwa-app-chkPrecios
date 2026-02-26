@@ -1,0 +1,1 @@
+var e=class a{constructor(){this.markerData="";this.markerSize=0;}get size(){return this.markerSize}get data(){return this.markerData}static create(t,i){let r=new a;return r.markerSize=t||0,r.markerData=i||"",r}toJSONObject(){return {markerData:this.markerData,markerSize:this.markerSize}}};export{e as a};

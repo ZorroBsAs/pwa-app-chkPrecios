@@ -1,0 +1,1 @@
+var i=new TextEncoder;function f(t){var r;let n=(r=t.data)!=null?r:t.rawData,a=t.symbology,o=64,c=`${n.length>o?n.substring(0,o):n}|${a}`,s=i.encode(c),e="";for(let d of s)e+=String.fromCodePoint(d);return btoa(e).replace(/=+$/,"_")}export{f as a};

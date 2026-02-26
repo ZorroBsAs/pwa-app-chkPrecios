@@ -1,0 +1,17 @@
+export { defaultBarcodeCapture } from './DefaultsBarcodeCapture.js';
+export { defaultBarcodeBatch } from './DefaultsBarcodeBatch.js';
+export { defaultBarcodeFind } from './DefaultsBarcodeFind.js';
+export { defaultSparkScan } from './DefaultsSparkScan.js';
+export { defaultSparkCapture } from './DefaultsSparkCapture.js';
+export { defaultSymbologies } from './DefaultsSymbologies.js';
+import '@scandit/web-datacapture-core';
+import '../find/BarcodeFindViewSettings.js';
+import '@scandit/web-datacapture-core/build/js/private/Serializable';
+import '../spark/SparkScanOverlayStyle.js';
+import '../spark/ui/SparkScanMiniPreviewSize.js';
+import '../Barcode.js';
+import '../EncodingRange.js';
+import '../StructuredAppendData.js';
+import '../SymbologyDescription.js';
+import '../Range.js';
+import '../SymbologySettings.js';

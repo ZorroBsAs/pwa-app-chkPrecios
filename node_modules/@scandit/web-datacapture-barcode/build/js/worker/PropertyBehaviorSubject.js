@@ -1,0 +1,1 @@
+export{a as PropertyBehaviorSubject}from'../chunks/chunk-QKP2VQEV.js';

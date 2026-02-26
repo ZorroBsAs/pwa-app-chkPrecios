@@ -1,0 +1,1 @@
+export{a as isDataCaptureView}from'../chunks/chunk-I53W7VSB.js';

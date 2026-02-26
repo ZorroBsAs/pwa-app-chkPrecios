@@ -1,0 +1,1 @@
+var o=class{constructor(r,e){var a,t;this._contextWebGL=r,this._maxPoolCapacity=(a=e==null?void 0:e.maxPoolCapacity)!=null?a:2,this._minPoolCapacity=(t=e==null?void 0:e.minPoolCapacity)!=null?t:1;}recycle(r){var e;r.length===this._frameSize&&((e=this._framePool)==null||e.push(r));}};export{o as a};

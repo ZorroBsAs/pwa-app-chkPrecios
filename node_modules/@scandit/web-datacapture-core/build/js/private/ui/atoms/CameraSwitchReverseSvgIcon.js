@@ -1,0 +1,1 @@
+export{a as CameraSwitchReverseSvgIcon}from'../../../chunks/chunk-QUWP3ILW.js';

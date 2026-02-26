@@ -1,0 +1,1 @@
+function u(t,f,o){let a=f*o,n=new Uint8ClampedArray(a*4),i=new Uint32Array(n.buffer);for(let r=0;r<a;r++){let e=t[r];i[r]=4278190080|e<<16|e<<8|e;}return n}export{u as a};

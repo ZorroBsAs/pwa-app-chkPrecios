@@ -1,0 +1,1 @@
+export{d as BarcodeArInfoAnnotation,a as BarcodeArInfoAnnotationAnchor,c as BarcodeArInfoAnnotationEvent,b as BarcodeArInfoAnnotationWidthPreset}from'../../../chunks/chunk-I6NAW3SE.js';

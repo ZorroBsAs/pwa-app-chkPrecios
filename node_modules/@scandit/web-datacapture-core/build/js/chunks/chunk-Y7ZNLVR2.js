@@ -1,0 +1,1 @@
+var e=(t=>(t.TopLeft="topLeft",t.TopCenter="topCenter",t.TopRight="topRight",t.CenterLeft="centerLeft",t.Center="center",t.CenterRight="centerRight",t.BottomLeft="bottomLeft",t.BottomCenter="bottomCenter",t.BottomRight="bottomRight",t))(e||{});export{e as a};

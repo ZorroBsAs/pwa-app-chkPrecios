@@ -6,5 +6,16 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173
+  },
+   optimizeDeps: {
+    exclude: [
+      "scandit-web-datacapture-core",
+      "scandit-web-datacapture-barcode"
+    ]},
+    build: {
+    commonjsOptions: {
+      transformMixedEsModules: true
+    }
   }
 })
+

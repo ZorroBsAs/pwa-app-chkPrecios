@@ -1,0 +1,1 @@
+import {a}from'./chunk-2AX7TBDI.js';var t={settings:a,defaultPosition:"worldFacing",availablePositions:["worldFacing","userFacing"]};export{t as a};

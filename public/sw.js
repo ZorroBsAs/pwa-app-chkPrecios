@@ -35,15 +35,21 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch: responder con cache o red fallback
 self.addEventListener('fetch', event => {
   const req = event.request;
+
+  //  NO cachear POST ni otros métodos
+  if (req.method !== 'GET') {
+    event.respondWith(fetch(req));
+    return;
+  }
 
   event.respondWith(
     caches.match(req).then(cachedResponse => {
       if (cachedResponse) {
         return cachedResponse;
       }
+
       return fetch(req).then(networkResponse => {
         return caches.open(CACHE_NAME).then(cache => {
           cache.put(req, networkResponse.clone());
@@ -57,4 +63,27 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+// Fetch: responder con cache o red fallback
+// self.addEventListener('fetch', event => {
+//   const req = event.request;
+
+//   event.respondWith(
+//     caches.match(req).then(cachedResponse => {
+//       if (cachedResponse) {
+//         return cachedResponse;
+//       }
+//       return fetch(req).then(networkResponse => {
+//         return caches.open(CACHE_NAME).then(cache => {
+//           cache.put(req, networkResponse.clone());
+//           return networkResponse;
+//         });
+//       });
+//     }).catch(() => {
+//       if (req.destination === 'document') {
+//         return caches.match('/index.html');
+//       }
+//     })
+//   );
+// });
 
